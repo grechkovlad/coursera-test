@@ -1,5 +1,6 @@
 * {
 	font-family: Arial;
+	box-sizing: border-box;
 }
 
 h1 {
@@ -7,32 +8,29 @@ h1 {
 	font-size: 175%;
 }
 
-.cell {
-	box-sizing: border-box;
-	width: 33%;
+.column {
 	float: left;
 }
 
 .menuPosition {
 	float: left;
 	background-color: #cccccc;
-	box-sizing: border-box;
-	margin: 3%;
-	border: solid black;
+	margin: 10px;
+	border: solid black 1px;
 }
 
 .sectionTitle {
-		width: 33%;
-		float: right;
-		text-align: center;
-		border-bottom: solid black;
-		border-left: solid black;
-		font-size: 125%;
+	width: 33%;
+	float: right;
+	text-align: center;
+	border-bottom: solid black 1px;
+	border-left: solid black 1px;
+	font-size: 125%;
 }
 
 .desc {
 	clear: right;
-	padding: 3%;
+	padding: 15px;
 }
 
 #title1 {
@@ -48,4 +46,25 @@ h1 {
 #title3 {
 	background-color: #eeee00;
 	color: black;
+}
+
+@media (min-width: 992px) {
+	.lg-column-4 {
+		width: 33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.md-column-6 {
+		width: 50%;
+	}
+	.md-column-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.sm-column-12 {
+		width: 100%;
+	}
 }
