@@ -1,0 +1,51 @@
+* {
+	font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+
+.cell {
+	box-sizing: border-box;
+	width: 33%;
+	float: left;
+}
+
+.menuPosition {
+	float: left;
+	background-color: #cccccc;
+	box-sizing: border-box;
+	margin: 3%;
+	border: solid black;
+}
+
+.sectionTitle {
+		width: 33%;
+		float: right;
+		text-align: center;
+		border-bottom: solid black;
+		border-left: solid black;
+		font-size: 125%;
+}
+
+.desc {
+	clear: right;
+	padding: 3%;
+}
+
+#title1 {
+	background-color: pink;
+	color: black;
+}
+
+#title2 {
+	background-color: maroon;
+	color: white;
+}
+
+#title3 {
+	background-color: #eeee00;
+	color: black;
+}
